@@ -15,7 +15,12 @@
     "eslint-plugin-svelte3": "^3.2.0",
     "prettier": "~2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
-    "svelte": "^3.34.0"
+    "svelte": "^3.34.0",
+    "vite-plugin-svelte-svg": "^1.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "svelte-preprocess": "^4.7.4"
+  }
 }
