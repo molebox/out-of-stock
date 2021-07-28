@@ -3,7 +3,7 @@
 <h1>Out of stock</h1>
 </div>
 
-This repo houses 2 projects that each showcase a demo ecommerce store. They are made with [Astro](https://astro.build/) and [Sveltekit](https://kit.svelte.dev/).
+This repo houses 2 projects that each showcase a demo ecommerce store. They are made with [Astro](https://astro.build/) and [Sveltekit](https://kit.svelte.dev/). The third project is a [Sanity](https://www.sanity.io/) studio which has the products dataset that the pther two use.
 
 I made this project to practice these cool new tech kids on the block (as of July 2021).
 
