@@ -6,6 +6,6 @@
     "oos-sveltekit": "yarn workspace sveltekit dev"
   },
   "workspaces": [
-    "frameworks/*"
+    "packages/*"
   ]
 }
