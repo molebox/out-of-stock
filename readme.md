@@ -12,7 +12,7 @@ All products are out of stock and **_cannot_** be purchased. Hence the name.
 <div align="center">
 <h2>This project is still very much a work on progress</h2>
 <br>
-<p>I'll be tweeting about its progress [@studio_hungry](https://twitter.com/studio_hungry)</p>
+<p>I'll be tweeting about its progress <a href="https://twitter.com/studio_hungry">@studio_hungry</a></p>
 </div>
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
