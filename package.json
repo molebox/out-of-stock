@@ -1,6 +1,10 @@
 {
   "private": true,
   "name": "out-of-stock",
+  "scripts": {
+    "oos-astro": "yarn workspace astro start",
+    "oos-sveltekit": "yarn workspace sveltekit dev"
+  },
   "workspaces": [
     "frameworks/*"
   ]
