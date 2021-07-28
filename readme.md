@@ -1,5 +1,7 @@
 
-# out of stock
+<div align="center">
+<h1>OPut of stock</h1>
+</div>
 
 This repo houses 2 projects that each showcase a demo ecommerce store. They are made with [Astro](https://astro.build/) and [Sveltekit](https://kit.svelte.dev/).
 
@@ -7,8 +9,8 @@ I made this project to practice these cool new tech kids on the block (as of Jul
 
 All products are out of stock and **_cannot_** be purchased. Hence the name.
 
-<div style={{textAlign="center"}>
-**This project is still very much a work on progress**
+<div align="center">
+<h2>This project is still very much a work on progress</h2>
 </div>
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
