@@ -21,6 +21,7 @@
   "type": "module",
   "dependencies": {
     "node-sass": "^6.0.1",
+    "svelte-media": "^0.1.4",
     "svelte-preprocess": "^4.7.4"
   }
 }
