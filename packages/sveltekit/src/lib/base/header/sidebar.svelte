@@ -1,3 +1,12 @@
+<script context="module">
+	// looking at detecting route change to close the sidebar
+	export async function load({ page }) {
+		console.log({ page });
+
+		return {};
+	}
+</script>
+
 <script>
 	export let open = false;
 </script>
@@ -13,12 +22,13 @@
 
 <style lang="scss">
 	aside {
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		height: 100%;
 		border-left: 0.2rem;
 		right: -100%;
 		transition: right 0.3s ease-in-out;
+		background-color: var(--eerie-black);
 
 		nav {
 			padding: 0.6rem;

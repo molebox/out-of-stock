@@ -36,6 +36,7 @@
 		left: 0;
 		position: fixed;
 		width: 100%;
+		background-color: var(--eerie-black);
 
 		.logo {
 			padding: 1.5rem;

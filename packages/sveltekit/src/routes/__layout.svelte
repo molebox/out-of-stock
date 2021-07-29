@@ -28,5 +28,6 @@
 	.base {
 		background-color: var(--eerie-black);
 		height: 100vh;
+		position: relative;
 	}
 </style>
