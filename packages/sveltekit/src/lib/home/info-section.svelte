@@ -4,10 +4,10 @@
 <section>
 	<div class="cta">
 		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ullam at iste, nemo quod
-			voluptatem!
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, autem recusandae!
+			Quibusdam, consequuntur omnis! Sit quod consequuntur a ipsa dolor?
 		</p>
-		<a href="/products">shop now</a>
+		<a href="/products">explore</a>
 	</div>
 	<img
 		src="https://source.unsplash.com/collection/3770957/1240x874"
@@ -22,10 +22,14 @@
 		justify-content: space-around;
 		align-items: center;
 		padding: 2rem;
+		background-color: var(--gray-x-11-gray);
+		padding: 2rem;
+		min-height: 500px;
 
 		img {
 			height: auto;
 			max-width: 400px;
+			box-shadow: -12px 10px 14px -6px var(--eerie-black);
 		}
 
 		.cta {
@@ -36,6 +40,7 @@
 			p {
 				font-size: 1.4rem;
 				padding: 2rem;
+				text-align: center;
 			}
 
 			a {
@@ -53,21 +58,23 @@
 				border-color: var(--baby-powder);
 				color: var(--baby-powder);
 				cursor: crosshair;
+				box-shadow: -12px 10px 14px -6px var(--eerie-black);
+			}
+		}
+	}
+
+	@media (max-width: 849px) {
+		.cta {
+			p {
+				font-size: 1.1rem;
 			}
 		}
 
-		@media (max-width: 849px) {
+		section {
 			flex-direction: column;
-
-			.cta {
-				p {
-					font-size: 1.1rem;
-					text-align: center;
-				}
-			}
-
 			img {
 				margin: 1.5rem auto;
+				max-width: 300px;
 			}
 		}
 	}

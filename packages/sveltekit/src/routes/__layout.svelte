@@ -15,7 +15,7 @@
 	{#if $media.large}
 		<DesktopHeader />
 	{:else}
-		<Sidebar bind:open />
+		<!-- <Sidebar bind:open /> -->
 		<MobileHeader bind:sidebar={open} />
 	{/if}
 	<Main>
@@ -28,6 +28,5 @@
 	.base {
 		background-color: var(--eerie-black);
 		height: 100vh;
-		position: relative;
 	}
 </style>
