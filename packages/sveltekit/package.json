@@ -15,14 +15,13 @@
     "eslint-plugin-svelte3": "^3.2.0",
     "prettier": "~2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
-    "rollup-plugin-string": "^3.0.0",
     "svelte": "^3.34.0",
     "vite-plugin-svelte-svg": "^1.0.0"
   },
   "type": "module",
   "dependencies": {
+    "@sanity/client": "^2.13.0",
     "node-sass": "^6.0.1",
-    "svelte-icon": "^1.2.0",
     "svelte-media": "^0.1.4",
     "svelte-preprocess": "^4.7.4"
   }

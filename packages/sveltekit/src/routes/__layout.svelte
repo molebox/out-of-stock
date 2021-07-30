@@ -4,8 +4,6 @@
 	import Main from '$lib/base/main.svelte';
 	import Footer from '$lib/base/footer.svelte';
 	import { media } from '$lib/stores/media';
-	import Sidebar from '$lib/base/header/sidebar.svelte';
-
 	import '../app.css';
 
 	let open = false;
@@ -15,8 +13,7 @@
 	{#if $media.large}
 		<DesktopHeader />
 	{:else}
-		<!-- <Sidebar bind:open /> -->
-		<MobileHeader bind:sidebar={open} />
+		<MobileHeader />
 	{/if}
 	<Main>
 		<slot />

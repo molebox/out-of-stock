@@ -8,19 +8,21 @@
 		justify-content: center;
 		align-items: center;
 		background-color: var(--eerie-black);
+		width: 100vw;
 
 		img {
 			margin-top: 5rem;
 			height: auto;
-			max-width: 1440px;
+			width: 100vw;
+			object-fit: contain;
 		}
 	}
 
 	@media (max-width: 849px) {
 		section {
 			img {
-				width: 350px;
 				margin: 5rem;
+				object-fit: contain;
 			}
 		}
 	}
