@@ -3,7 +3,8 @@
   "name": "out-of-stock",
   "scripts": {
     "oos-astro": "yarn workspace astro start",
-    "oos-sveltekit": "yarn workspace sveltekit dev"
+    "oos-sveltekit": "yarn workspace sveltekit dev",
+    "build-sveltekit": "yarn workspace sveltekit build"
   },
   "workspaces": [
     "packages/*"
