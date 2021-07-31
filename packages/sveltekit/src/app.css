@@ -22,7 +22,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Gowun Batang', serif;
 }
 
-p {
+p,a,button {
     font-family: 'Gowun Dodum', sans-serif;
 }
 

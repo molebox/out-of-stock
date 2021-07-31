@@ -10,6 +10,7 @@
 	<div class="logo">
 		<Logo />
 	</div>
+	<a class="title" href="/">out of stock</a>
 </header>
 
 <div class="wrapper">
@@ -79,6 +80,18 @@
 		width: 100%;
 		background-color: var(--eerie-black);
 
+		.title {
+			color: var(--baby-powder);
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 0.1rem;
+			text-decoration: none;
+		}
+
+		.title:hover {
+			cursor: crosshair;
+		}
+
 		.logo {
 			padding: 1.5rem;
 		}
@@ -92,6 +105,7 @@
 		left: 0;
 		position: fixed;
 		background-color: var(--eerie-black);
+		margin-top: 5rem;
 
 		a {
 			display: flex;

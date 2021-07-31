@@ -2,13 +2,16 @@
   "name": "sveltekit",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
+    "dev": "NODE_OPTIONS=\"--experimental-modules --experimental-specifier-resolution=node\" svelte-kit dev",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
+    "@movingbrands/svelte-portable-text": "^0.0.11",
+    "@sanity/block-content-to-hyperscript": "^3.0.0",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.25",
     "@sveltejs/kit": "next",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
@@ -21,6 +24,7 @@
   "type": "module",
   "dependencies": {
     "@sanity/client": "^2.13.0",
+    "@sanity/image-url": "^0.140.22",
     "node-sass": "^6.0.1",
     "svelte-media": "^0.1.4",
     "svelte-preprocess": "^4.7.4"

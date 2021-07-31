@@ -1,24 +1,23 @@
 <script>
 	import Logo from '../../../../static/oos-logo.svg?component';
+	import Link from '../../link.svelte';
 </script>
 
 <header>
 	<div class="logo">
 		<Logo />
 	</div>
+	<a href="/">out of stock</a>
 	<nav>
 		<ul>
 			<li>
-				<a href="/">home</a>
+				<Link to="/products" text="products" size="0.9rem" />
 			</li>
 			<li>
-				<a href="/products">products</a>
+				<Link to="/about" text="about" size="0.9rem" />
 			</li>
 			<li>
-				<a href="/about">about</a>
-			</li>
-			<li>
-				<a href="/contact">contact</a>
+				<Link to="/contact" text="contact" size="0.9rem" />
 			</li>
 		</ul>
 	</nav>
@@ -28,6 +27,7 @@
 	header {
 		display: flex;
 		align-items: center;
+		justify-content: space-around;
 		height: 5rem;
 		padding-left: 0.8rem;
 		padding-right: 0.8rem;
@@ -37,6 +37,18 @@
 		position: fixed;
 		width: 100%;
 		background-color: var(--eerie-black);
+
+		a {
+			color: var(--baby-powder);
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 0.1rem;
+			text-decoration: none;
+		}
+
+		a:hover {
+			cursor: crosshair;
+		}
 
 		.logo {
 			padding: 1.5rem;
@@ -48,31 +60,9 @@
 			justify-content: flex-start;
 			align-items: center;
 
-			a {
-				color: var(--baby-powder);
-				font-size: 1rem;
-				text-decoration: none;
-
-				background-image: linear-gradient(currentColor, var(--volt));
-				background-position: 0% 100%;
-				background-repeat: no-repeat;
-				background-size: 0% 2px;
-				transition: background-size 0.7s;
-			}
-
-			a:hover {
-				color: var(--volt);
-				transition: 0.3s;
-				cursor: crosshair;
-				background-size: 100% 2px;
-			}
-
 			ul {
 				display: flex;
-				justify-content: flex-start;
 				list-style: none;
-				width: 100%;
-				height: 100%;
 
 				li {
 					position: relative;

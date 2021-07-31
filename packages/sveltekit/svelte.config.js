@@ -1,6 +1,7 @@
 /** @type {import('@sveltejs/kit').Config} */
 import sveltePreProcess from 'svelte-preprocess';
 import svelteSVG from 'vite-plugin-svelte-svg';
+import netlify from '@sveltejs/adapter-netlify';
 const config = {
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
@@ -12,6 +13,7 @@ const config = {
 				}),
 			],
 		},
+		adapter: netlify()
 	},
 	preprocess: sveltePreProcess()
 };

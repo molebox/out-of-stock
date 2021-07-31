@@ -1,5 +1,5 @@
 <script>
-	import Circles from '../../../static/circles.svg?component';
+	import Button from '$lib/button.svelte';
 </script>
 
 <section>
@@ -14,7 +14,7 @@
 				to have some fun with some new tech and see how to connect the essentail dots while creating
 				an ecommerce experience.
 			</p>
-			<a href="/products">explore</a>
+			<Button to="/products" text="explore" width="200px" />
 		</div>
 		<img
 			src="https://source.unsplash.com/collection/3770957/1240x874"
@@ -68,23 +68,6 @@
 				p {
 					font-size: 1.3rem;
 					padding: 2rem;
-				}
-
-				a {
-					padding: 0.5rem 1rem;
-					text-decoration: none;
-					text-transform: uppercase;
-					background-color: var(--eerie-black);
-					border-color: var(--baby-powder);
-					color: var(--baby-powder);
-					width: 200px;
-					text-align: center;
-				}
-
-				a:hover {
-					cursor: crosshair;
-					box-shadow: -12px 10px 14px -6px var(--eerie-black);
-					transition: box-shadow 0.3s ease-in-out;
 				}
 			}
 		}
