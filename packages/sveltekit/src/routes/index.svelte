@@ -7,9 +7,8 @@
 	// add http://localhost:3000 to the api cors on the sanity studio settings
 
 	export async function load() {
-		const query = '*[_type == "product"][0...4]';
+		const query = '*[_type == "product"][0...6]';
 		const products = await client.fetch(query);
-		console.log({ products });
 		return {
 			props: { products }
 		};

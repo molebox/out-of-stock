@@ -1,5 +1,10 @@
-<footer>
-	<slot />
-</footer>
+<footer>Rich Haines</footer>
 
-<style></style>
+<style>
+	footer {
+		display: flex;
+		height: 100px;
+		margin-bottom: 100px;
+		margin-left: 20px;
+	}
+</style>

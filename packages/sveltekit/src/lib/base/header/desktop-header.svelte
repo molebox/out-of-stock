@@ -11,13 +11,13 @@
 	<nav>
 		<ul>
 			<li>
-				<Link to="/products" text="products" size="0.9rem" />
+				<Link to="/products" text="products" size="0.7rem" />
 			</li>
 			<li>
-				<Link to="/about" text="about" size="0.9rem" />
+				<Link to="/about" text="about" size="0.7rem" />
 			</li>
 			<li>
-				<Link to="/contact" text="contact" size="0.9rem" />
+				<Link to="/contact" text="contact" size="0.7rem" />
 			</li>
 		</ul>
 	</nav>

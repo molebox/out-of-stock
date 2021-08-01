@@ -3,23 +3,25 @@
 </script>
 
 <section>
-	<h2>
-		Out of stock is a project built to demostrate the <span>ecommerce power of Sveltekit</span>. All
-		items are out of stock and unavalaible for purchase.
-	</h2>
-	<div class="inner">
-		<div class="cta">
-			<p>
-				All product data is stored and populated from a Sanity backend. The aim of this project is
-				to have some fun with some new tech and see how to connect the essentail dots while creating
-				an ecommerce experience.
-			</p>
-			<Button to="/products" text="explore" width="200px" />
+	<div class="outer">
+		<h2>
+			Out of stock is a project built to demostrate the <span>ecommerce power of Sveltekit</span>.
+			All items are out of stock and unavalaible for purchase.
+		</h2>
+		<div class="inner">
+			<div class="cta">
+				<p>
+					All product data is stored and populated from a Sanity backend. The aim of this project is
+					to have some fun with some new tech and see how to connect the essentail dots while
+					creating an ecommerce experience.
+				</p>
+				<Button to="https://github.com/molebox/out-of-stock" text="explore code" width="200px" />
+			</div>
+			<img
+				src="https://source.unsplash.com/collection/3770957/1240x874"
+				alt="Random from a moody collection on unsplash"
+			/>
 		</div>
-		<img
-			src="https://source.unsplash.com/collection/3770957/1240x874"
-			alt="Random from a moody collection on unsplash"
-		/>
 	</div>
 </section>
 
@@ -32,6 +34,11 @@
 		padding: 2rem;
 		min-height: 500px;
 		position: relative;
+
+		.outer {
+			max-width: 1000px;
+			margin: 0 auto;
+		}
 
 		h2 {
 			font-size: 1.5rem;
