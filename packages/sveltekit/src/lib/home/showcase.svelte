@@ -17,7 +17,7 @@
 					<img src={urlFor(product.defaultProductVariant.images[0].asset).width(400)} alt="" />
 					<h3>{product.title}</h3>
 					<p>{product.blurb.en}</p>
-					<Button to={product.slug.current} text="shop" width="100%" />
+					<Button to={product.slug.current} text="shop" />
 				</div>
 			{/each}
 		</div>
@@ -60,6 +60,18 @@
 				img {
 					box-shadow: -12px 10px 14px -6px var(--eerie-black);
 				}
+			}
+		}
+	}
+
+	@media (max-width: 992px) {
+		.container {
+			h3 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1.4rem;
 			}
 		}
 	}

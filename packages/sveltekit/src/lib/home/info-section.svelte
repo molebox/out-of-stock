@@ -41,7 +41,7 @@
 		}
 
 		h2 {
-			font-size: 1.5rem;
+			font-size: 1.6rem;
 			font-weight: 700;
 			padding: 2rem;
 			position: relative;
@@ -73,25 +73,28 @@
 				align-items: center;
 
 				p {
-					font-size: 1.3rem;
+					font-size: 1.4rem;
 					padding: 2rem;
 				}
 			}
 		}
 	}
 
-	@media (max-width: 849px) {
+	@media (max-width: 992px) {
 		section {
+			h2 {
+				font-size: 2rem;
+			}
 			.inner {
 				flex-direction: column;
 				img {
 					margin: 1.5rem auto;
-					max-width: 300px;
+					max-width: 400px;
 				}
 
 				.cta {
 					p {
-						font-size: 1.1rem;
+						font-size: 1.6rem;
 					}
 				}
 			}

@@ -23,7 +23,6 @@
 
 <style>
 	.base {
-		background-color: var(--eerie-black);
 		min-height: 100vh;
 		height: 100%;
 	}

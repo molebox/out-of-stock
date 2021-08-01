@@ -3,8 +3,10 @@
 <style>
 	footer {
 		display: flex;
-		height: 100px;
-		margin-bottom: 100px;
-		margin-left: 20px;
+		height: 300px;
+		margin: 50px 50px 150px 50px;
+		box-shadow: -12px 10px 14px -6px var(--eerie-black);
+
+		background-color: var(--eerie-black);
 	}
 </style>
