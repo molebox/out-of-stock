@@ -18,7 +18,7 @@
 		}
 	}
 
-	@media (max-width: 849px) {
+	@media (max-width: 992px) {
 		section {
 			img {
 				margin: 5rem;

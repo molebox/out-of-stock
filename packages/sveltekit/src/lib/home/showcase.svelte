@@ -70,10 +70,6 @@
 			h2 {
 				font-size: 2rem;
 			}
-
-			.products-grid {
-				grid-template-columns: repeat(auto-fill, minmax(auto, 600px));
-			}
 		}
 		.container {
 			h3 {
