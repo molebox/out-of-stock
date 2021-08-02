@@ -15,6 +15,7 @@
 			height: auto;
 			width: 100vw;
 			object-fit: contain;
+			z-index: 100;
 		}
 	}
 

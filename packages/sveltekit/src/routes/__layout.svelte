@@ -18,12 +18,15 @@
 	<Main>
 		<slot />
 	</Main>
-	<Footer />
+	{#if $media.large}
+		<Footer />
+	{/if}
 </div>
 
 <style>
 	.base {
 		min-height: 100vh;
 		height: 100%;
+		background-color: var(--baby-powder);
 	}
 </style>

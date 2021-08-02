@@ -31,6 +31,7 @@
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
+		margin: 6rem 0;
 
 		.outer {
 			max-width: 1440px;
@@ -39,7 +40,7 @@
 		}
 
 		h2 {
-			font-size: 0.8rem;
+			font-size: 1rem;
 			text-transform: uppercase;
 			font-weight: 700;
 			letter-spacing: 0.1rem;

@@ -1,8 +1,19 @@
 <script>
 	import Button from '$lib/button.svelte';
+	import Binary1 from '../../../static/binary-1.svg?component';
+	import Binary2 from '../../../static/binary-2.svg?component';
+	import { media } from '$lib/stores/media';
 </script>
 
 <section>
+	{#if $media.large}
+		<div class="binary-1">
+			<Binary1 />
+		</div>
+		<div class="binary-2">
+			<Binary2 />
+		</div>
+	{/if}
 	<div class="outer">
 		<h2>
 			Out of stock is a project built to demostrate the <span>ecommerce power of Sveltekit</span>.
@@ -15,6 +26,7 @@
 					to have some fun with some new tech and see how to connect the essentail dots while
 					creating an ecommerce experience.
 				</p>
+
 				<Button to="https://github.com/molebox/out-of-stock" text="explore code" width="200px" />
 			</div>
 			<img
@@ -29,11 +41,22 @@
 	section {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
-		background-color: var(--gray-x-11-gray);
-		padding: 2rem;
-		min-height: 500px;
+		padding: 8rem 2rem;
+		background-color: var(--baby-powder);
+
 		position: relative;
+
+		.binary-1 {
+			position: absolute;
+			top: 2rem;
+			left: 2rem;
+			z-index: 100;
+		}
+		.binary-2 {
+			position: absolute;
+			bottom: -3rem;
+			left: 5rem;
+		}
 
 		.outer {
 			max-width: 1000px;
@@ -43,7 +66,7 @@
 		h2 {
 			font-size: 1.6rem;
 			font-weight: 700;
-			padding: 2rem;
+			padding: 2rem 0;
 			position: relative;
 
 			span {
@@ -65,18 +88,23 @@
 				height: auto;
 				max-width: 400px;
 				box-shadow: -12px 10px 14px -6px var(--eerie-black);
+				margin-top: 3rem;
 			}
 
 			.cta {
 				display: flex;
 				flex-direction: column;
-				align-items: center;
+				align-items: flex-start;
 
 				p {
 					font-size: 1.4rem;
-					padding: 2rem;
+					margin: 3rem 0;
 				}
 			}
+
+			// .cta > * {
+			// 	padding: 2rem;
+			// }
 		}
 	}
 
@@ -89,11 +117,13 @@
 			.inner {
 				flex-direction: column;
 				img {
-					margin: 1.5rem auto;
+					margin: 3rem auto;
 					max-width: 500px;
 				}
 
 				.cta {
+					align-items: center;
+
 					p {
 						font-size: 2rem;
 					}

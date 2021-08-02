@@ -17,7 +17,7 @@
 				<Website />
 			</a>
 		</div>
-		<div class="bottom"><p>Created by Rich Haines</p></div>
+		<div class="bottom"><p>Created for fun, by Rich Haines</p></div>
 	</div>
 </footer>
 
@@ -27,8 +27,6 @@
 		justify-content: center;
 		align-items: center;
 		height: 300px;
-		margin: 50px 50px 150px 50px;
-		box-shadow: -12px 10px 14px -6px var(--eerie-black);
 		background-color: var(--eerie-black);
 
 		.container {
