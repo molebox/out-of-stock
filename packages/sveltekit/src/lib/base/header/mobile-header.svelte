@@ -16,19 +16,15 @@
 <div class="wrapper">
 	<a class="link" href="/">
 		<HomeLogo />
-		home
 	</a>
 	<a class="link" href="/products">
 		<ProductLogo />
-		products
 	</a>
 	<a class="link" href="/about">
 		<AboutLogo />
-		about
 	</a>
 	<a class="link" href="/contact">
 		<ContactLogo />
-		contact
 	</a>
 </div>
 
@@ -100,7 +96,7 @@
 		display: flex;
 		justify-content: space-evenly;
 		width: 100vw;
-		height: 5rem;
+		height: 7rem;
 		bottom: 0;
 		left: 0;
 		position: fixed;
@@ -112,8 +108,7 @@
 			flex-direction: column;
 			justify-content: space-around;
 			align-items: center;
-			margin: 1rem auto;
-			color: var(--volt);
+			margin: 1.5rem auto;
 			text-decoration: none;
 		}
 	}
