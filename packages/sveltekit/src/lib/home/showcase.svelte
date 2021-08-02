@@ -26,7 +26,7 @@
 
 <style lang="scss">
 	section {
-		min-height: 1000px;
+		// min-height: 1000px;
 		background-color: var(--baby-powder);
 		display: flex;
 		flex-direction: column;
@@ -64,14 +64,24 @@
 		}
 	}
 
+	// on mobile
 	@media (max-width: 992px) {
-		.container {
-			h3 {
+		.outer {
+			h2 {
 				font-size: 2rem;
 			}
 
+			.products-grid {
+				grid-template-columns: repeat(auto-fill, minmax(auto, 600px));
+			}
+		}
+		.container {
+			h3 {
+				font-size: 2.4rem;
+			}
+
 			p {
-				font-size: 1.4rem;
+				font-size: 1.8rem;
 			}
 		}
 	}

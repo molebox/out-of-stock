@@ -6,7 +6,7 @@
 
 <a style="width: {width}" href={to}>{text}</a>
 
-<style>
+<style lang="scss">
 	a {
 		padding: 0.5rem 1rem;
 		text-decoration: none;
@@ -22,5 +22,13 @@
 	a:hover {
 		cursor: crosshair;
 		box-shadow: -12px 10px 14px -6px var(--eerie-black);
+	}
+
+	// mobile
+	@media (max-width: 992px) {
+		a {
+			font-size: 1.7rem;
+			min-width: 300px;
+		}
 	}
 </style>

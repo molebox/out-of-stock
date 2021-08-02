@@ -80,21 +80,22 @@
 		}
 	}
 
+	// mobile
 	@media (max-width: 992px) {
 		section {
 			h2 {
-				font-size: 2rem;
+				font-size: 2.4rem;
 			}
 			.inner {
 				flex-direction: column;
 				img {
 					margin: 1.5rem auto;
-					max-width: 400px;
+					max-width: 500px;
 				}
 
 				.cta {
 					p {
-						font-size: 1.6rem;
+						font-size: 2rem;
 					}
 				}
 			}
