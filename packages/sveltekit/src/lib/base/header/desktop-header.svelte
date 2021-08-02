@@ -75,13 +75,4 @@
 			}
 		}
 	}
-
-	// mobile
-	@media (max-width: 992px) {
-		header {
-			a {
-				font-size: 2rem;
-			}
-		}
-	}
 </style>

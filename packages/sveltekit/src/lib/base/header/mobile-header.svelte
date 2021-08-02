@@ -112,4 +112,13 @@
 			text-decoration: none;
 		}
 	}
+
+	// mobile
+	@media (max-width: 992px) {
+		header {
+			a {
+				font-size: 1.7rem;
+			}
+		}
+	}
 </style>

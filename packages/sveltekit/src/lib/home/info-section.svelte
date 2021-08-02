@@ -50,7 +50,7 @@
 				background-image: linear-gradient(var(--volt), var(--volt));
 				background-position: 0% 100%;
 				background-repeat: no-repeat;
-				background-size: 100% 13px;
+				background-size: 100% 25px;
 			}
 		}
 
