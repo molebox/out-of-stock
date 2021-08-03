@@ -75,6 +75,7 @@
 		position: fixed;
 		width: 100%;
 		background-color: var(--eerie-black);
+		border-bottom: solid 2px var(--baby-powder);
 
 		.title {
 			color: var(--baby-powder);

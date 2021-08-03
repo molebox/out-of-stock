@@ -1,19 +1,8 @@
 <script>
 	import Button from '$lib/button.svelte';
-	import Binary1 from '../../../static/binary-1.svg?component';
-	import Binary2 from '../../../static/binary-2.svg?component';
-	import { media } from '$lib/stores/media';
 </script>
 
 <section>
-	{#if $media.large}
-		<div class="binary-1">
-			<Binary1 />
-		</div>
-		<div class="binary-2">
-			<Binary2 />
-		</div>
-	{/if}
 	<div class="outer">
 		<h2>
 			Out of stock is a project built to demostrate the <span>ecommerce power of Sveltekit</span>.
@@ -41,22 +30,8 @@
 	section {
 		display: flex;
 		flex-direction: column;
-		padding: 8rem 2rem;
+		padding: 6rem 2rem;
 		background-color: var(--baby-powder);
-
-		position: relative;
-
-		.binary-1 {
-			position: absolute;
-			top: 2rem;
-			left: 2rem;
-			z-index: 100;
-		}
-		.binary-2 {
-			position: absolute;
-			bottom: -3rem;
-			left: 5rem;
-		}
 
 		.outer {
 			max-width: 1000px;
@@ -64,7 +39,7 @@
 		}
 
 		h2 {
-			font-size: 1.6rem;
+			font-size: 2.6rem;
 			font-weight: 700;
 			padding: 2rem 0;
 			position: relative;

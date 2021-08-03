@@ -31,12 +31,13 @@
 		height: 5rem;
 		padding-left: 0.8rem;
 		padding-right: 0.8rem;
-		z-index: 500;
+		z-index: 2000;
 		top: 0;
 		left: 0;
 		position: fixed;
 		width: 100%;
 		background-color: var(--eerie-black);
+		border-bottom: solid 2px var(--baby-powder);
 
 		a {
 			color: var(--baby-powder);

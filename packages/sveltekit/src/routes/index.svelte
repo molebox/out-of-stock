@@ -16,6 +16,8 @@
 </script>
 
 <script>
+	import Video from '$lib/home/video.svelte';
+
 	export let products;
 </script>
 
@@ -23,8 +25,9 @@
 	<title>Out of stock</title>
 </svelte:head>
 
-<Hero />
+<Video />
 <InfoSection />
+<Hero />
 <Showcase {products} />
 
 <!-- <style lang="scss">

@@ -11,7 +11,6 @@
 		width: 100vw;
 
 		img {
-			margin-top: 5rem;
 			height: auto;
 			width: 100vw;
 			object-fit: contain;
