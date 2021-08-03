@@ -1,5 +1,7 @@
 <script>
 	import Button from '$lib/button.svelte';
+	import { urlFor } from '$lib/sanity/image-builder';
+	export let image;
 </script>
 
 <section>
@@ -18,10 +20,7 @@
 
 				<Button to="https://github.com/molebox/out-of-stock" text="explore code" width="200px" />
 			</div>
-			<img
-				src="https://source.unsplash.com/collection/3770957/1240x874"
-				alt="Random from a moody collection on unsplash"
-			/>
+			<img src={urlFor(image)} alt="Random from a moody collection on unsplash" />
 		</div>
 	</div>
 </section>

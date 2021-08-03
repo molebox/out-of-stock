@@ -5,7 +5,6 @@
 		const query = `*[_type == "product" && slug.current == $slug][0]`;
 
 		const product = await client.fetch(query, { slug: page.params.slug });
-		console.log({ product });
 		return {
 			props: { product }
 		};

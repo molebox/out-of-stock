@@ -7,10 +7,13 @@
 	// add http://localhost:3000 to the api cors on the sanity studio settings
 
 	export async function load() {
-		const query = '*[_type == "product"][0...6]';
-		const products = await client.fetch(query);
+		const productQuery = '*[_type == "product"][0...6]';
+		const products = await client.fetch(productQuery);
+		const homepageQuery = '*[_type == "homepage"]';
+		const homepage = await client.fetch(homepageQuery);
+		console.log(homepage);
 		return {
-			props: { products }
+			props: { products, homepage }
 		};
 	}
 </script>
@@ -19,15 +22,16 @@
 	import Video from '$lib/home/video.svelte';
 
 	export let products;
+	export let homepage;
 </script>
 
 <svelte:head>
 	<title>Out of stock</title>
 </svelte:head>
 
-<Video />
-<InfoSection />
-<Hero />
+<Video videoUrl={homepage[0].heroVideo.secure_url} />
+<InfoSection image={homepage[0].smallInfoImage.asset} />
+<Hero image={homepage[0].largeHeroImage.asset} />
 <Showcase {products} />
 
 <!-- <style lang="scss">

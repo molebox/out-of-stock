@@ -1,5 +1,5 @@
 <script>
-	import homepagevideo from '../../../static/homepage-video.mp4';
+	export let videoUrl;
 </script>
 
 <section>
@@ -15,8 +15,7 @@
 	<video
 		autoplay
 		loop
-		poster="https://sveltejs.github.io/assets/caminandes-llamigos.jpg"
-		src={homepagevideo}
+		src={videoUrl}
 		title="This whole glitch effect is 100% lifted from this codepen: https://codepen.io/cipherbeta/pen/YLdVjw"
 	>
 		<track kind="captions" />

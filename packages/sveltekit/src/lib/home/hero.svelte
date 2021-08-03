@@ -1,5 +1,10 @@
+<script>
+	import { urlFor } from '$lib/sanity/image-builder';
+	export let image;
+</script>
+
 <section>
-	<img src="/man-on-roof.jpg" alt="A man sitting on a roof" />
+	<img src={urlFor(image)} alt="A man sitting on a roof" />
 </section>
 
 <style lang="scss">
