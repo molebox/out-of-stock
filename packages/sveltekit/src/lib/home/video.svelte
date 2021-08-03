@@ -1,7 +1,7 @@
 <script>
 	import ScrollDown from './scroll-down.svelte';
-
-	export let videoUrl;
+	import { media } from '$lib/stores/media';
+	export let video;
 </script>
 
 <section>
@@ -13,13 +13,15 @@
 		>
 			OUT OF STOCK
 		</h4>
-		<ScrollDown />
+		{#if media.large}
+			<ScrollDown />
+		{/if}
 	</div>
 	<video
 		autoPlay
 		loop
 		muted
-		src={videoUrl}
+		src={video}
 		title="This whole glitch effect is 100% lifted from this codepen: https://codepen.io/cipherbeta/pen/YLdVjw"
 	>
 		<track kind="captions" />

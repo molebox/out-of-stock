@@ -24,12 +24,4 @@
 			z-index: 100;
 		}
 	}
-
-	// @media (max-width: 992px) {
-	// 	section {
-	// 		img {
-	// 			object-fit: contain;
-	// 		}
-	// 	}
-	// }
 </style>

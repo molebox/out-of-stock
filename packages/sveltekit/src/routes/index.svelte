@@ -9,9 +9,12 @@
 	export async function load() {
 		const productQuery = '*[_type == "product"][0...6]';
 		const products = await client.fetch(productQuery);
-		const homepageQuery = '*[_type == "homepage"]';
+		const homepageQuery = `*[_type == "homepage"][0] {
+			"video": heroVideo.secure_url,
+			"infoImage": smallInfoImage.asset,
+			"hero": largeHeroImage.asset
+		}`;
 		const homepage = await client.fetch(homepageQuery);
-		console.log(homepage);
 		return {
 			props: { products, homepage }
 		};
@@ -23,16 +26,14 @@
 
 	export let products;
 	export let homepage;
+	$: ({ video, infoImage, hero } = homepage);
 </script>
 
 <svelte:head>
 	<title>Out of stock</title>
 </svelte:head>
 
-<Video videoUrl={homepage[0].heroVideo.secure_url} />
-<InfoSection image={homepage[0].smallInfoImage.asset} />
-<Hero image={homepage[0].largeHeroImage.asset} />
+<Video {video} />
+<InfoSection image={infoImage} />
+<Hero image={hero} />
 <Showcase {products} />
-
-<!-- <style lang="scss">
-</style> -->
