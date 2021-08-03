@@ -31,6 +31,7 @@
 		flex-direction: column;
 		padding: 6rem 2rem;
 		background-color: var(--baby-powder);
+		border-top: solid 3px var(--eerie-black);
 
 		.outer {
 			max-width: 1000px;
@@ -38,7 +39,7 @@
 		}
 
 		h2 {
-			font-size: 2.6rem;
+			font-size: 2.4rem;
 			font-weight: 700;
 			padding: 2rem 0;
 			position: relative;

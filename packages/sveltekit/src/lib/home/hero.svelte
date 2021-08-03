@@ -14,6 +14,8 @@
 		align-items: center;
 		background-color: var(--eerie-black);
 		width: 100vw;
+		border-top: solid 3px var(--eerie-black);
+		border-bottom: solid 3px var(--eerie-black);
 
 		img {
 			height: auto;

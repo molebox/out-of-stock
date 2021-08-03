@@ -7,7 +7,7 @@
 	<div class="logo">
 		<Logo />
 	</div>
-	<a href="/">out of stock</a>
+	<a href="/">oos</a>
 	<nav>
 		<ul>
 			<li>

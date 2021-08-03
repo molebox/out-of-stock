@@ -13,8 +13,9 @@
 		</h4>
 	</div>
 	<video
-		autoplay
+		autoPlay
 		loop
+		muted
 		src={videoUrl}
 		title="This whole glitch effect is 100% lifted from this codepen: https://codepen.io/cipherbeta/pen/YLdVjw"
 	>
