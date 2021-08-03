@@ -13,7 +13,7 @@
 		>
 			OUT OF STOCK
 		</h4>
-		{#if media.large}
+		{#if $media.large}
 			<ScrollDown />
 		{/if}
 	</div>
