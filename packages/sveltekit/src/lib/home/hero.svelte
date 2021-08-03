@@ -25,12 +25,11 @@
 		}
 	}
 
-	@media (max-width: 992px) {
-		section {
-			img {
-				margin: 5rem;
-				object-fit: contain;
-			}
-		}
-	}
+	// @media (max-width: 992px) {
+	// 	section {
+	// 		img {
+	// 			object-fit: contain;
+	// 		}
+	// 	}
+	// }
 </style>

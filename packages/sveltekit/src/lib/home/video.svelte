@@ -1,4 +1,6 @@
 <script>
+	import ScrollDown from './scroll-down.svelte';
+
 	export let videoUrl;
 </script>
 
@@ -11,6 +13,7 @@
 		>
 			OUT OF STOCK
 		</h4>
+		<ScrollDown />
 	</div>
 	<video
 		autoPlay
@@ -41,7 +44,10 @@
 		.glitch-container {
 			position: absolute;
 			z-index: 1000;
-			// Here's the meat and potatoes.
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
 
 			/* Our mixin positions a copy of our text
             directly on our existing text, while
@@ -86,7 +92,7 @@
 				&::after {
 					@include glitchCopy;
 					left: -2px;
-					text-shadow: -2px 0 #00fff9, 2px 2px #ccfe0dff;
+					text-shadow: -2px 0 #262626ff, 2px 2px #ccfe0dff;
 					animation: glitch-anim2 1s infinite linear alternate-reverse;
 				}
 			}
