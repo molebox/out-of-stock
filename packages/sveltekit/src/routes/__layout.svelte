@@ -23,10 +23,9 @@
 	{/if}
 </div>
 
-<style>
+<style lang="scss">
 	.base {
 		min-height: 100vh;
-		height: 100%;
 		background-color: var(--baby-powder);
 	}
 </style>
