@@ -1,6 +1,14 @@
 <script>
 	import Logo from '../../../../static/oos-logo.svg?component';
 	import Link from '../../link.svelte';
+	import { fly } from 'svelte/transition';
+
+	let mounted = false;
+
+	import { onMount } from 'svelte';
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <header>
@@ -10,15 +18,17 @@
 	<a href="/">oos</a>
 	<nav>
 		<ul>
-			<li>
-				<Link to="/products" text="products" size="0.7rem" />
-			</li>
-			<li>
-				<Link to="/about" text="about" size="0.7rem" />
-			</li>
-			<li>
-				<Link to="/contact" text="contact" size="0.7rem" />
-			</li>
+			{#if mounted}
+				<li transition:fly={{ delay: 500, x: 50 }}>
+					<Link to="/products" text="products" size="0.7rem" />
+				</li>
+				<li transition:fly={{ delay: 1000, x: 50 }}>
+					<Link to="/about" text="about" size="0.7rem" />
+				</li>
+				<li transition:fly={{ delay: 1500, x: 50 }}>
+					<Link to="/contact" text="contact" size="0.7rem" />
+				</li>
+			{/if}
 		</ul>
 	</nav>
 </header>

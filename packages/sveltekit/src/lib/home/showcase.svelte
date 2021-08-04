@@ -3,7 +3,6 @@
 	import Button from '$lib/button.svelte';
 	import Divider from '$lib/divider.svelte';
 
-	// import BlockContent from '@movingbrands/svelte-portable-text';
 	export let products;
 </script>
 
@@ -26,7 +25,6 @@
 
 <style lang="scss">
 	section {
-		// min-height: 1000px;
 		background-color: var(--baby-powder);
 		display: flex;
 		flex-direction: column;

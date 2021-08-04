@@ -1,22 +1,32 @@
 <script>
 	import ScrollDown from './scroll-down.svelte';
 	import { media } from '$lib/stores/media';
+	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
 	export let video;
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <section>
-	<div class="glitch-container">
-		<h4
-			class="glitch"
-			data-text="
+	{#if mounted}
+		<div transition:fade={{ delay: 1500, duration: 1500 }} class="glitch-container">
+			<h4
+				class="glitch"
+				data-text="
         OUT OF STOCK"
-		>
-			OUT OF STOCK
-		</h4>
-		{#if $media.large}
-			<ScrollDown />
-		{/if}
-	</div>
+			>
+				OUT OF STOCK
+			</h4>
+			{#if $media.large}
+				<ScrollDown />
+			{/if}
+		</div>
+	{/if}
 	<video
 		autoPlay
 		loop

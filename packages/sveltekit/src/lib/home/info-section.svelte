@@ -1,7 +1,16 @@
 <script>
 	import Button from '$lib/button.svelte';
 	import { urlFor } from '$lib/sanity/image-builder';
+	import { slide } from 'svelte/transition';
+	import { onMount } from 'svelte';
+
 	export let image;
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <section>
